@@ -93,14 +93,14 @@ def moyenne_note():
 
     choix_saisie: float = 0
     liste_note: list = []
-    note : float = 0
+    note: float = 0
 
     while choix_saisie != -1:
-        is_float : bool = False
+        is_float: bool = False
         while not is_float:
             try:
                 note = float(input("Saissez votre note : "))
-                is_float : True
+                is_float = True
             except ValueError:
                 print("Vous n'avez pas entré un type valide. Veuillez réessayer")
         if note == -1:
@@ -127,5 +127,4 @@ def major_minor():
 
 
 if __name__ == "__main__":
-    var: float = -1
-    print(var)
+    moyenne_note()
